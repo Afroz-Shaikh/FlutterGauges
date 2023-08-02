@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gauges Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <navbar class="sticky top-0 backdrop-filter-custom border-b-2 border-black">
+      <!-- Updated background color to white -->
+      <div class="container px-4 mx-auto">
+        <div class="flex items-center justify-between py-5">
+          <div class="w-auto">
+            <div class="flex flex-wrap items-center">
+              <div class="w-auto pr-3">
+                <a href="#" class="flex items-center justify-center gap-x-4">
+                  <img
+                    src="./images/flutter-logo.png"
+                    alt="Flutter Gauges"
+                    class="w-8 h-8"
+                  />
+
+                  <h1 class="text-3xl font-sans text-black font-bold">
+                    Flutter Gauges
+                  </h1>
+                  <!-- Updated text color to black -->
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-auto">
+            <div class="flex flex-wrap items-center">
+              <div class="w-auto hidden lg:block">
+                <ul class="flex items-center gap-x-6">
+                  <li
+                    class="font-medium text-black hover:text-gray-700 tracking-tight"
+                  >
+                    <!-- Updated text color to black and hover color to gray -->
+                    <a
+                      href="https://pub.dev/documentation/geekyants_flutter_gauges/latest/"
+                      >View Docs</a
+                    >
+                  </li>
+                  <li
+                    class="font-medium text-black hover:text-gray-700 tracking-tight"
+                  >
+                    <!-- Updated text color to black and hover color to gray -->
+                    <a href="https://pub.dev/packages/geekyants_flutter_gauges"
+                      >Get Package</a
+                    >
+                  </li>
+
+                  <li class="w-auto hidden lg:block">
+                    <div class="inline-block">
+                      <a
+                        class="inline-block px-4 py-1 text-white font-semibold text-center tracking-tight bg-blue-600 hover:bg-blue-800 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                        href="https://geekyants.com/hire/v2/"
+                      >
+                        Hire Us
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w-auto lg:hidden">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 navbar-burger"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </navbar>
+
+    <div
+      class="hidden navbar-menu h-full fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 isolate"
+    >
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+      <nav class="relative z-10 px-9 pt-8 bg-white h-full overflow-y-auto">
+        <!-- Updated background color to white -->
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full">
+            <div class="flex items-center justify-between -m-2">
+              <div class="w-auto p-2 navbar-burger">
+                <a class="inline-block" href="#">
+                  <h1 class="text-4xl font-extrabold text-black">
+                    Flutter Gauges
+                  </h1>
+                  <!-- Updated text color to black -->
+                </a>
+              </div>
+
+              <div class="w-auto p-2 cross-button">
+                <a class="navbar-burger text-black cross-button" href="#">
+                  <!-- Updated text color to black -->
+                  <svg
+                    width="24"
+                    height="24"
+                    viewbox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 18L18 6M6 6L18 18"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center py-16 w-full">
+            <ul>
+              <li
+                class="mb-12 font-medium text-black hover:text-gray-700 tracking-tight"
+              >
+                <!-- Updated text color to black and hover color to gray -->
+                <a href="#">View Docs</a>
+              </li>
+              <li
+                class="mb-12 font-medium text-black hover:text-gray-700 tracking-tight"
+              >
+                <!-- Updated text color to black and hover color to gray -->
+                <a href="#">Get Package</a>
+              </li>
+              <li
+                class="font-medium text-black hover:text-gray-700 tracking-tight"
+              >
+                <!-- Updated text color to black and hover color to gray -->
+                <a href="#">Hire Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="">
+      <!-- Hero Section of the -->
+
+      <div class="pt-32">
+        <div class="flex justify-center mb-4">
+          <a
+            class="inline-flex items-center gap-x-2 bg-transparent border border-gray-200 hover:bg-blue-600 text-sm text-black-800 hover:text-white p-1 pl-3 rounded-full transition hover:border-blue-700 dark:border-gray-700 dark:hover:border-gray-600"
+            href="https://pub.dev/packages/geekyants_flutter_gauges"
+          >
+            Check out v.1.0.2
+            <span
+              class="py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-200 font-semibold text-sm text-black-600 dark:text-gray-400"
+            >
+              <svg
+                class="w-2.5 h-2.5"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="pt-6 lg:pt-2 pb-0 lg:pb-2 bg-transparent overflow-hidden">
+          <!-- Updated background color to white -->
+          <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap justify-center items-center -m-8">
+              <!-- Centering content using flexbox -->
+              <div class="w-full p-8">
+                <div class="md:max-w-2xl mx-auto">
+                  <!-- Updated text color to black and center-aligned -->
+                  <head>
+                    <h1
+                      class="mb-6 text-5xl md:text-6xl text-black tracking-normal text-center font-extrabold !leading-[1.2]"
+                    >
+                      <!-- Center-aligning the text -->
+                      Customizable Gauges for your Flutter app
+                    </h1>
+                    <h3 class="mb-12 text-center text-gray-600">
+                      Elevate Your App's User Experience with Powerful Linear
+                      and Radial Gauges. Get Started Now!
+                    </h3>
+                  </head>
+
+                  <div class="flex flex-wrap justify-center -m-2 mb-14">
+                    <!-- Center-aligning the content -->
+                    <button class="w-full sm:w-auto p-2" id="loadFlutterButton">
+                      <a
+                        class="inline-block w-full px-5 py-4 text-white font-semibold tracking-tight bg-indigo-500 hover:bg-blue-600 rounded-lg focus:ring-4 focus:ring-red-100 transition duration-200"
+                        href="https://gauges-showcase.vercel.app/"
+                      >
+                        View Showcases
+                      </a>
+                    </button>
+
+                    <div
+                      class="w-full sm:w-auto p-2 text-black hover:text-white"
+                    >
+                      <a
+                        class="inline-flex items-center justify-center w-full px-5 py-4 bg-transparent hover:bg-indigo-600 border border-gray-600 hover:border-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                        href="https://pub.dev/packages/geekyants_flutter_gauges"
+                      >
+                        <div class="inline-block">
+                          <svg
+                            class="mr-2.5"
+                            width="18"
+                            height="19"
+                            viewbox="0 0 18 19"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M3 12.5L3 13.25C3 14.4926 4.00736 15.5 5.25 15.5L12.75 15.5C13.9926 15.5 15 14.4926 15 13.25L15 12.5M12 9.5L9 12.5M9 12.5L6 9.5M9 12.5L9 3.5"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="font-semibold tracking-tight">
+                          Download Package
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMPLE RULER -->
+
+    <div class="ruler">
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm">
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+        <div class="mm"></div>
+      </div>
+      <div class="cm"></div>
+      <div id="indicator"></div>
+    </div>
+
+    <!-- GAUGE -->
+    <section class="bg-black mt-32 py-5">
+      <div class="container mx-auto px-4 py-48 text-white flex flex-col gap-12">
+        <h1 class="flex text-7xl font-bold">Get Started</h1>
+        <h3 class="text-2xl">
+          Start building beautiful gauges with our package
+        </h3>
+
+        <div class="flex items-center gap-x-2">
+          <code class="text-xl">
+            <span class="text-[#5ce488]">$ </span>
+            flutter pub add geekyants_flutter_gauges
+          </code>
+
+          <button
+            id="copy"
+            onclick="myFunction()"
+            title="Copy to Clipboard"
+            class="hover:bg-gray-700 p-2 rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <h4 class="text-2xl">
+          Refer to
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[#5ce488]"
+          >
+            Showcase
+          </a>
+          and
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[#5ce488]"
+          >
+            documentaion
+          </a>
+          for more!!
+        </h4>
+      </div>
+    </section>
+
+    <!--Extra-->
+    <grid class="grid grid-cols-2 gap-6 m-20">
+      <a
+        href="https://gauges-showcase.vercel.app"
+        class="h-64 bg-white rounded-lg border border-gray-100 hover:border-white"
+        ><div
+          class="bg-gray-50 rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200"
+        >
+          <span class="text-base font-medium text-gray-900">Linear Gauge</span
+          ><span class="text-gray-500"
+            ><svg
+              class="w-3.5 h-3.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              ></path></svg
+          ></span>
+        </div>
+        <div class="flex justify-center items-center h-42">
+          <div class="relative h-4/6 dark:hidden w-64">
+            <span
+              style="
+                box-sizing: border-box;
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: initial;
+                background: none;
+                opacity: 1;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+                inset: 0px;
+              "
+            >
+              <img src="/images/Radial.png" alt="HTML5 Icon" />
+            </span>
+          </div>
+          <div class="hidden relative h-4/6 dark:block w-56">
+            <img src="/images/linear.png" alt="HTML5 Icon" />
+          </div></div
+      ></a>
+
+      <a
+        href="https://gauges-showcase.vercel.app"
+        class="h-64 bg-white rounded-lg border border-gray-100 hover:border-white"
+      >
+        <div
+          class="bg-gray-50 rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200"
+        >
+          <span class="text-base font-medium text-gray-900">Radial Gauge</span>
+          <span class="text-gray-500"
+            ><svg
+              class="w-3.5 h-3.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              ></path></svg
+          ></span>
+        </div>
+        <div class="flex justify-center items-center h-52">
+          <div class="relative h-4/6 dark:hidden w-96">
+            <img src="/images/Radial.png" alt="HTML5 Icon" />
+          </div>
+          <div class="hidden relative h-4/6 dark:block w-56">
+            <span
+              style="
+                box-sizing: border-box;
+                display: block;
+                overflow: hidden;
+                width: initial;
+                height: initial;
+                background: none;
+                opacity: 1;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+                inset: 0px;
+              "
+            >
+              <img src="/images/Radial.png" alt="HTML5 Icon"
+            /></span>
+          </div></div
+      ></a>
+    </grid>
+
+    <div id="snackbar">Copied to Clipboard</div>
+
+    <!-- FOOTER SECION -->
+
+    <footer class="bg-black shadow m-0">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center"
+          >© 2023
+          <a href="https://geekyants.com/" class="hover:underline">GeekyAnts</a
+          >. All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a
+              href="https://github.com/GeekyAnts/GaugesFlutter"
+              class="mr-4 hover:underline md:mr-6"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://pub.dev/packages/geekyants_flutter_gauges"
+              class="mr-4 hover:underline md:mr-6"
+              >Package</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://geekyants.com/hire/v2/"
+              class="mr-4 hover:underline md:mr-6"
+              >Hire GeekyAnts</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const indicator = document.getElementById("indicator");
+
+    // Function to update the indicator position based on scroll position
+    function updateIndicator() {
+      // Get the scroll position
+      const scrollPosition = window.scrollY;
+
+      // Get the page height
+      const pageHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+      // Calculate the percentage scrolled
+      const percentScrolled = (scrollPosition / pageHeight) * 100;
+
+      // set the indicator position based on the percentage scrolled
+      indicator.style.left = `${percentScrolled}%`;
+
+      // Set the indicator width based on the percentage scrolled
+      // indicator.style.width = `${percentScrolled}%`;
+    }
+
+    // Call the updateIndicator function on page load and scroll
+    window.addEventListener("load", updateIndicator);
+    window.addEventListener("scroll", updateIndicator);
+
+    <!-- Your existing HTML code here -->
+
+    // JavaScript to handle the mobile navbar toggle
+    const navbarBurger = document.querySelector(".navbar-burger");
+    const navbarMenu = document.querySelector(".navbar-menu");
+
+    navbarBurger.addEventListener("click", (e) => {
+      console.log(e.target);
+
+      navbarMenu.classList.toggle("hidden");
+    });
+
+    const crossButton = document.querySelector(".cross-button");
+
+    crossButton.addEventListener("click", (e) => {
+      navbarMenu.classList.toggle("hidden");
+    });
+
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function () {
+        x.className = x.className.replace("show", "");
+      }, 3000);
+    }
+
+    // function to copy
+    const copyToClipboard = () => {
+      const el = document.createElement("textarea");
+      el.value = "flutter pub add geekyants_flutter_gauges";
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+    };
+
+    const copyButton = document.querySelector("#copy");
+
+    copyButton.addEventListener("click", copyToClipboard);
+  </script>
+</html>

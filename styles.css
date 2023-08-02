@@ -1,0 +1,228 @@
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background: url("./assets/graph-bg.svg"), #fff;
+  background-color: #fff;
+}
+
+/* Add custom styles for the gauge */
+.ruler {
+  position: relative;
+  width: 80%;
+  margin: 10px auto;
+  height: 14px;
+}
+.ruler .cm,
+.ruler .mm {
+  position: absolute;
+  border-left: 1px solid #555;
+  height: 14px;
+  width: 10%;
+}
+.ruler .cm:after {
+  position: absolute;
+  bottom: -15px;
+  font: 11px/1 sans-serif;
+}
+.ruler .mm {
+  height: 5px;
+}
+.ruler .mm:nth-of-type(5) {
+  height: 10px;
+}
+.ruler .cm:nth-of-type(1) {
+  left: 0%;
+}
+.ruler .cm:nth-of-type(1):after {
+  content: "0";
+}
+.ruler .cm:nth-of-type(2) {
+  left: 10%;
+}
+.ruler .cm:nth-of-type(2):after {
+  content: "1";
+}
+.ruler .cm:nth-of-type(3) {
+  left: 20%;
+}
+.ruler .cm:nth-of-type(3):after {
+  content: "2";
+}
+.ruler .cm:nth-of-type(4) {
+  left: 30%;
+}
+.ruler .cm:nth-of-type(4):after {
+  content: "3";
+}
+.ruler .cm:nth-of-type(5) {
+  left: 40%;
+}
+.ruler .cm:nth-of-type(5):after {
+  content: "4";
+}
+.ruler .cm:nth-of-type(6) {
+  left: 50%;
+}
+.ruler .cm:nth-of-type(6):after {
+  content: "5";
+}
+.ruler .cm:nth-of-type(7) {
+  left: 60%;
+}
+.ruler .cm:nth-of-type(7):after {
+  content: "6";
+}
+.ruler .cm:nth-of-type(8) {
+  left: 70%;
+}
+.ruler .cm:nth-of-type(8):after {
+  content: "7";
+}
+.ruler .cm:nth-of-type(9) {
+  left: 80%;
+}
+.ruler .cm:nth-of-type(9):after {
+  content: "8";
+}
+.ruler .cm:nth-of-type(10) {
+  left: 90%;
+}
+.ruler .cm:nth-of-type(10):after {
+  content: "9";
+}
+.ruler .cm:nth-of-type(11) {
+  left: 100%;
+}
+.ruler .cm:nth-of-type(11):after {
+  content: "10";
+}
+.ruler .mm:nth-of-type(1) {
+  left: 10%;
+}
+.ruler .mm:nth-of-type(2) {
+  left: 20%;
+}
+.ruler .mm:nth-of-type(3) {
+  left: 30%;
+}
+.ruler .mm:nth-of-type(4) {
+  left: 40%;
+}
+.ruler .mm:nth-of-type(5) {
+  left: 50%;
+}
+.ruler .mm:nth-of-type(6) {
+  left: 60%;
+}
+.ruler .mm:nth-of-type(7) {
+  left: 70%;
+}
+.ruler .mm:nth-of-type(8) {
+  left: 80%;
+}
+.ruler .mm:nth-of-type(9) {
+  left: 90%;
+}
+.ruler .mm:nth-of-type(10) {
+  left: 100%;
+}
+/* Your existing CSS styles for the ruler go here */
+
+#indicator {
+  width: 0;
+  height: 0;
+  left: 0;
+  top: -0.5rem;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid red;
+  /* z-index: 1; */
+  transition: all ease-in-out;
+  transform: rotate(180deg);
+}
+
+.backdrop-filter-custom {
+  background-color: #fff !important;
+  backdrop-filter: saturate(190%) blur(7px);
+  backface-visibility: hidden;
+}
+
+.bg-img {
+  background-image: url("./images/banner-img.png");
+  background-size: contain;
+  background-position: 150% 40px;
+  background-repeat: no-repeat;
+}
+
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border: 1px solid #fff;
+  border-radius: 5px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
