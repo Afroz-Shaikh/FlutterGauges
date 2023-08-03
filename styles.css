@@ -2,13 +2,6 @@
   font-family: "lexend", sans-serif;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 1140px; /* this is the important part*/
-}
-
 body {
   background: url("./assets/graph-bg.svg"), #fff;
   background-color: #fff;
