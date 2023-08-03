@@ -1,5 +1,5 @@
 * {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "lexend", sans-serif;
 }
 
 body {
@@ -7,6 +7,34 @@ body {
   background-color: #fff;
 }
 
+#get-started {
+  background-color: #0f172a;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* #main-button {
+  background-color: red;
+}
+#main-button:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+} */
+
+#secondary-button {
+  background-color: #fff;
+  color: red;
+  border: 1px solid red;
+}
+#secondary-button:hover {
+  background-color: red;
+  color: #fff;
+}
 /* Add custom styles for the gauge */
 .ruler {
   position: relative;
