@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gauges Showcase</title>
+    <link href="dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <navbar class="sticky top-0 backdrop-filter-custom border-b-2 border-black">
@@ -55,7 +69,7 @@
                   <li class="w-auto hidden lg:block">
                     <div class="inline-block">
                       <a
-                        class="inline-block px-4 py-1 text-white font-semibold text-center tracking-tight bg-blue-600 hover:bg-blue-800 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                        class="inline-block px-4 py-1 text-white font-semibold text-center tracking-tight bg-red-600 hover:bg-white border hover:border-red-500 hover:text-red-600 rounded-lg focus:ring-4 focus:ring-black transition duration-200"
                         href="https://geekyants.com/hire/v2/"
                       >
                         Hire Us
@@ -202,12 +216,12 @@
                   <!-- Updated text color to black and center-aligned -->
                   <head>
                     <h1
-                      class="mb-6 text-5xl md:text-6xl text-black tracking-normal text-center font-extrabold !leading-[1.2]"
+                      class="mb-6 text-5xl md:text-6xl text-black tracking-normal text-center font-medium !leading-[1.2]"
                     >
                       <!-- Center-aligning the text -->
                       Customizable Gauges for your Flutter app
                     </h1>
-                    <h3 class="mb-12 text-center text-gray-600">
+                    <h3 class="mb-12 text-center text-gray-500 font-extralight">
                       Elevate Your App's User Experience with Powerful Linear
                       and Radial Gauges. Get Started Now!
                     </h3>
@@ -217,7 +231,7 @@
                     <!-- Center-aligning the content -->
                     <button class="w-full sm:w-auto p-2" id="loadFlutterButton">
                       <a
-                        class="inline-block w-full px-5 py-4 text-white font-semibold tracking-tight bg-indigo-500 hover:bg-blue-600 rounded-lg focus:ring-4 focus:ring-red-100 transition duration-200"
+                        class="inline-block w-full px-5 py-4 text-white bg-[#EB4640] font-semibold tracking-tight hover:bg-white hover:text-black border hover:border-red-500 rounded-lg focus:ring-4 focus:ring-red-100 transition duration-100"
                         href="https://gauges-showcase.vercel.app/"
                       >
                         View Showcases
@@ -228,7 +242,7 @@
                       class="w-full sm:w-auto p-2 text-black hover:text-white"
                     >
                       <a
-                        class="inline-flex items-center justify-center w-full px-5 py-4 bg-transparent hover:bg-indigo-600 border border-gray-600 hover:border-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                        class="inline-flex items-center justify-center w-full px-5 py-4 bg-transparent hover:bg-blue-600 border border-gray-600 hover:border-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
                         href="https://pub.dev/packages/geekyants_flutter_gauges"
                       >
                         <div class="inline-block">
@@ -380,8 +394,120 @@
       <div id="indicator"></div>
     </div>
 
-    <!-- GAUGE -->
-    <section class="bg-black mt-32 py-5">
+    <section class="bg-white mt-32 py-4">
+      <div class="container mx-auto px-4 py-28 text-black">
+        <h1 class="py-5 text-center text-5xl font-bold">Higly Customizable</h1>
+        <h3 class="text-center text-gray-600">
+          Create stunning and interactive linear and radial gauges effortlessly
+        </h3>
+      </div>
+    </section>
+
+    <section
+      class="container mx-auto bg-white gap-8 justify-stretch flex md:flex-row sm:flex-col"
+    >
+      <div
+        class="relative mt-6 flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+      >
+        <div class="p-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="red"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="red"
+            class="mb-4 h-12 w-12"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"
+            />
+          </svg>
+
+          <h5
+            class="mb-0 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+          >
+            Interactive
+          </h5>
+          <p
+            class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+          >
+            The gauges are interactive and can be controlled by mouse and touch.
+          </p>
+        </div>
+        <div class="p-5 pt-0"></div>
+      </div>
+
+      <div
+        class="relative mt-6 flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+      >
+        <div class="p-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="red"
+            class="mb-4 h-12 w-12"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+            />
+          </svg>
+
+          <h5
+            class="mb-0 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+          >
+            Responsive
+          </h5>
+          <p
+            class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+          >
+            The gauges are interactive and can be controlled by mouse and touch.
+          </p>
+        </div>
+        <div class="p-5 pt-0"></div>
+      </div>
+
+      <div
+        class="relative mt-6 flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+      >
+        <div class="p-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="red"
+            class="mb-4 h-12 w-12"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"
+            />
+          </svg>
+
+          <h5
+            class="mb-0 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+          >
+            Highly Customizable
+          </h5>
+          <p
+            class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+          >
+            The gauges are interactive and can be controlled by mouse and touch.
+          </p>
+        </div>
+        <div class="p-5 pt-0"></div>
+      </div>
+    </section>
+
+    <!-- Get Started -->
+    <section id="get-started" class="bg-black mt-32 py-5">
       <div class="container mx-auto px-4 py-48 text-white flex flex-col gap-12">
         <h1 class="flex text-7xl font-bold">Get Started</h1>
         <h3 class="text-2xl">
@@ -441,109 +567,124 @@
       </div>
     </section>
 
-    <!--Extra-->
-    <grid class="grid grid-cols-2 gap-6 m-20">
-      <a
-        href="https://gauges-showcase.vercel.app"
-        class="h-64 bg-white rounded-lg border border-gray-100 hover:border-white"
-        ><div
-          class="bg-gray-50 rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200"
-        >
-          <span class="text-base font-medium text-gray-900">Linear Gauge</span
-          ><span class="text-gray-500"
-            ><svg
-              class="w-3.5 h-3.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 18 18"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-              ></path></svg
-          ></span>
-        </div>
-        <div class="flex justify-center items-center h-42">
-          <div class="relative h-4/6 dark:hidden w-64">
-            <span
-              style="
-                box-sizing: border-box;
-                display: block;
-                overflow: hidden;
-                width: 100%;
-                height: initial;
-                background: none;
-                opacity: 1;
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-                position: absolute;
-                inset: 0px;
-              "
-            >
-              <img src="/images/linear.png" alt="HTML5 Icon" />
-            </span>
-          </div>
-          <div class="hidden relative h-4/6 dark:block w-56">
-            <img src="/images/linear.png" alt="HTML5 Icon" />
-          </div></div
-      ></a>
+    <section class="bg-white mt-3 py-3">
+      <div class="container mx-auto px-4 py-4 text-black">
+        <h1 class="py-5 text-center text-5xl font-bold">Start Exploring</h1>
+        <h3 class="text-center text-gray-600">
+          Get started with Linear and Radial Gauges
+        </h3>
+      </div>
+    </section>
 
-      <a
-        href="https://gauges-showcase.vercel.app"
-        class="h-64 bg-white rounded-lg border border-gray-100 hover:border-white"
-      >
-        <div
-          class="bg-gray-50 rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200"
+    <!--Extra-->
+    <div class="container mx-auto px-4 py-8">
+      <grid class="grid sm:grid-cols-1 md:grid-cols-2 grid-cols-2 gap-6 m-20">
+        <a
+          href="https://gauges-showcase.vercel.app"
+          class="h-64 bg-white rounded-lg border border-red -100 hover:border-white"
         >
-          <span class="text-base font-medium text-gray-900">Radial Gauge</span>
-          <span class="text-gray-500"
-            ><svg
-              class="w-3.5 h-3.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 18 18"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-              ></path></svg
-          ></span>
-        </div>
-        <div class="flex justify-center items-center h-52">
-          <div class="relative h-4/6 dark:hidden w-96">
-            <img src="/images/radial.png" alt="" />
+          <div
+            class="rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200"
+          >
+            <span class="text-base font-semibold text-gray-900"
+              >Linear Gauge</span
+            ><span class="text-gray-500"
+              ><svg
+                class="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                ></path></svg
+            ></span>
           </div>
-          <div class="hidden relative h-4/6 dark:block w-56">
-            <span
-              style="
-                box-sizing: border-box;
-                display: block;
-                overflow: hidden;
-                width: initial;
-                height: initial;
-                background: none;
-                opacity: 1;
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-                position: absolute;
-                inset: 0px;
-              "
-            >
-              <img src="/images/radial.png" alt=""
-            /></span>
-          </div></div
-      ></a>
-    </grid>
+          <div class="flex justify-center items-center h-42">
+            <div class="relative h-4/6 dark:hidden w-64">
+              <span
+                style="
+                  box-sizing: border-box;
+                  display: block;
+                  overflow: hidden;
+                  width: 100%;
+                  height: initial;
+                  background: none;
+                  opacity: 1;
+                  border: 0px;
+                  margin: 0px;
+                  padding: 0px;
+                  position: absolute;
+                  inset: 0px;
+                "
+              >
+                <img src="/images/linear.png" alt="HTML5 Icon" />
+              </span>
+            </div>
+            <div class="hidden relative h-4/6 dark:block w-auto">
+              <img src="/images/linear.png" alt="HTML5 Icon" />
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://gauges-showcase.vercel.app"
+          class="h-64 bg-white rounded-lg border border-red -100 hover:border-white"
+        >
+          <div
+            class="rounded-t-md py-2.5 px-5 flex justify-between items-center border-b border-gray-200"
+          >
+            <span class="text-base font-semibold text-gray-900"
+              >Radial Gauge</span
+            ><span class="text-gray-500"
+              ><svg
+                class="w-3.5 h-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                ></path></svg
+            ></span>
+          </div>
+          <div class="flex justify-center items-center h-42">
+            <div class="relative h-4/6 dark:hidden w-64">
+              <span
+                style="
+                  box-sizing: border-box;
+                  display: block;
+                  overflow: hidden;
+                  width: 100%;
+                  height: initial;
+                  background: none;
+                  opacity: 1;
+                  border: 0px;
+                  margin: 0px;
+                  padding: 0px;
+                  position: absolute;
+                  inset: 0px;
+                "
+              >
+                <img src="/images/radial.png" alt="HTML5 Icon" />
+              </span>
+            </div>
+            <div class="hidden relative h-4/6 dark:block w-auto">
+              <img src="/images/radial.png" alt="HTML5 Icon" />
+            </div>
+          </div>
+        </a>
+      </grid>
+    </div>
 
     <div id="snackbar">Copied to Clipboard</div>
 
