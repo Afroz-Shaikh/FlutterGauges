@@ -2,6 +2,13 @@
   font-family: "lexend", sans-serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1140px; /* this is the important part*/
+}
+
 body {
   background: url("./assets/graph-bg.svg"), #fff;
   background-color: #fff;
@@ -9,6 +16,39 @@ body {
 
 #get-started {
   background-color: #0f172a;
+}
+
+.animate {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  filter: blur(5px);
+  transform: scale(0.4);
+}
+
+.checkout {
+  transition-delay: 300ms;
+}
+
+.animated {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.feature-card:nth-child(2) {
+  transition-delay: 200ms;
+}
+.feature-card:nth-child(3) {
+  transition-delay: 400ms;
+}
+.feature-card:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate {
+    transition: none;
+  }
 }
 
 .card {
@@ -169,6 +209,7 @@ body {
   border-bottom: 10px solid red;
   /* z-index: 1; */
   transition: all ease-in-out;
+
   transform: rotate(180deg);
 }
 
